@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add to Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #343a40;
+        }
+        center {
+            margin-top: 50px;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 90%;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    <center>
+        <form action="or" method="post">
+            <h1>Add Item to Cart</h1>
+            <label for="iname">Item Name:</label>
+            <input type="text" id="iname" name="iname" required><br>
+            
+            <label for="qty">Quantity:</label>
+            <input type="text" id="qty" name="qty" required><br><br>
+            
+            <input type="submit" value="Add to Cart">
+        </form>
+    </center>
+</body>
+</html>
